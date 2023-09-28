@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+ height: 100vh;
+}
+
+section {
+  height: 100vh;
+  overflow: hidden;
+}
+#section1 {
+  background: #9f94eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#section1 h2 {
+  padding: 50px 40px;
+  font-size: 50px;
+  font-weight: bold;
+  /* clip-path: polygon(0% 0%, 100% 0%, 100% 110%, 0% 110%); */
+}
+#section1 .img{
+  min-height: 500px;
+}
+#section1 .img,
+#section1 img {
+  min-width: 580px;
+  width: auto;
+  max-width: 55%;
+}
+
+#section2 {
+  /* background-image: url("http://demo.highhay.com/studiofix/img/items/img-sample4.jpg");
+  background-size: cover;
+  background-position: 50% 100%; */
+  padding: 0px 20px;
+  height: 50vh;
+}
+
+#section2 .single {
+  width: 100%;
+  border: 1px solid #000;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #00000080;
+  border-radius: 12px;
+}
+#section2 h2{
+  padding: 50px 0px;
+}
+#section2 h2,
+#section2 .single h2,
+#section2 .single h1 {
+  font-weight: bolder;
+  font-size: 32px;
+}
+#section2 .single h2 {
+}
