@@ -30,9 +30,9 @@ const Section2 = () => {
           return (
             <motion.div 
               key={sm}
-              initial={{ y: `${sm*3}0` }}
+              initial={{ y: sm*30 }}
               whileInView={{ y: 0 }}
-              transition={{duration: .75, delay: '.' + calculateDynamicDelay(sm)}}
+              transition={{duration: 0.75, delay: Number(`.` + calculateDynamicDelay(sm))}}
               className="single h-auto"
             >
               <h1>Hello</h1>
