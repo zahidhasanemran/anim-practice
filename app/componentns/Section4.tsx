@@ -9,7 +9,7 @@ const Section1 = () => {
         
         
         <motion.h2
-          initial={{y: -20, opacity: 0}}
+          initial={{y: 30, opacity: 0}}
           whileInView={{y: 0, opacity: 1}}
           transition={{
             y: {type: "spring", stiffness: 35, duration: 0.75},
@@ -20,19 +20,7 @@ const Section1 = () => {
           }}
           viewport={{once: false}}
         >Hello Bangladesh</motion.h2>
-
-        <motion.img 
-          initial={{x: -200, opacity: 0}}
-          whileInView={{x: 0, opacity: 1}}
-          transition={{
-            x: {duration: 0.5, stiffness: 10, damping: 10},
-            delay: .55
-          }}
-          src={img1} 
-          alt="image" 
-        />
-               
-        
+       
 
         
         
